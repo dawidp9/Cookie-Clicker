@@ -1,6 +1,16 @@
 # Cookie Clicker
 
-[[__TOC__]]
+React web application written in TypeScript based on React Hooks and Redux. 
+
+##### Table of Contents  
+[Overview](#Overview)  
+[Scripts](#Scripts)  
+
+## Overview
+
+<p align="center">
+  <img src="gifs/cookieclicker.gif" width="500"/>
+</p>
 
 ## Scripts
 
