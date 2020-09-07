@@ -1,21 +1,16 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../types/CommonTypes';
+import { useRootStore } from '../../state/RootStateContext';
 import { useEffect } from 'react';
-import { setNextLevel } from '../../state/level/actions';
 
 export default () => {
-    const dispatch = useDispatch();
-    const allPoints = useSelector((state: RootState) => state.points.allPoints);
-    const level = useSelector((state: RootState) => state.level);
-
-    const currentLevel = level.currentLevel;
-    const nextLevelPoints = level.requirePoints;
+    const { user } = useRootStore();
 
     useEffect(() => {
-        if (allPoints >= nextLevelPoints) {
-            dispatch(setNextLevel());
+        if (user.allPoints >= user.nextLevelRequirePoints) {
+            user.setNextLevel();
         }
-    }, [dispatch, allPoints, nextLevelPoints]);
+    }, [user.allPoints, user]);
 
-    return { currentLevel, allPoints, nextLevelPoints };
+    return {
+        user,
+    };
 };

@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import CookieContainer from '../containers/CookieContainer/CookieContainer';
 import UserStatisticsContainer from '../containers/UserStatisticsContainer/UserStatisticsContainer';
-import StoreContainer from '../containers/StoreContainer/StoreContainer';
 import { Col, Grid, Row } from 'react-flexbox-grid';
 import ItemsStatisticsContainer from '../containers/ItemsStatisticsContainer/ItemsStatisticsContainer';
+import StoreContainer from '../containers/StoreContainer/StoreContainer';
 
 const App = () => {
     return (

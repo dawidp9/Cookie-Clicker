@@ -1,54 +1,45 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../types/CommonTypes';
-import { buyMultiplier, buyOreo, buyRobot } from '../../state/store/actions';
-import { setPointMultiplier, subtractPoints } from '../../state/points/actions';
+import { useRootStore } from '../../state/RootStateContext';
 
 export default () => {
-    const dispatch = useDispatch();
-    const allPoints = useSelector((state: RootState) => state.points.allPoints);
-    const store = useSelector((state: RootState) => state.store);
-    const level = useSelector((state: RootState) => state.level.currentLevel);
-    const robot = store.robot;
-    const multiplier = store.multiplier;
-    const oreo = store.oreo;
+    const { items, user } = useRootStore();
 
     const showNotEnoughPointsAlert = () =>
-        alert("You don't have enough points :(");
+        alert("You don't have enough user :(");
 
     const onClickBuyRobot = () => {
-        if (allPoints >= robot.price) {
-            dispatch(subtractPoints(robot.price));
-            dispatch(buyRobot());
+        const price = items.robot.price;
+        if (price <= user.allPoints) {
+            items.buyRobot();
+            user.subtractPoints(price);
         } else {
             showNotEnoughPointsAlert();
         }
     };
 
     const onClickBuyMultiplier = () => {
-        if (allPoints >= multiplier.price) {
-            dispatch(subtractPoints(multiplier.price));
-            dispatch(buyMultiplier());
-            dispatch(setPointMultiplier(multiplier.owned + 1));
+        const price = items.multiplier.price;
+        if (price <= user.allPoints) {
+            items.buyMultiplier();
+            user.subtractPoints(price);
+            user.setPointsMultiplier(items.multiplier.owned);
         } else {
             showNotEnoughPointsAlert();
         }
     };
 
     const onClickBuyOreo = () => {
-        if (allPoints >= oreo.price) {
-            dispatch(subtractPoints(oreo.price));
-            dispatch(buyOreo());
+        const price = items.oreo.price;
+        if (price <= user.allPoints) {
+            items.buyOreo();
+            user.subtractPoints(price);
         } else {
             showNotEnoughPointsAlert();
         }
     };
 
     return {
-        allPoints,
-        robot,
-        multiplier,
-        level,
-        oreo,
+        items,
+        user,
         onClickBuyRobot,
         onClickBuyMultiplier,
         onClickBuyOreo,

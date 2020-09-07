@@ -3,15 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App/App';
 import * as serviceWorker from './boot/serviceWorker';
-import { Provider } from 'react-redux';
-import store from './boot/configureStore';
+import { RootStateProvider } from './state/RootStateContext';
 
 ReactDOM.render(
-    <Provider store={store}>
+    <RootStateProvider>
         <React.StrictMode>
             <App />
         </React.StrictMode>
-    </Provider>,
+    </RootStateProvider>,
     document.getElementById('root'),
 );
 
