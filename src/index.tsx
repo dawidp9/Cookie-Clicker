@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App/App';
 import * as serviceWorker from './boot/serviceWorker';
-import { RootStateProvider } from './state/RootStateContext';
+import { RootStateProvider } from './model/RootStateContext';
 
 ReactDOM.render(
     <RootStateProvider>

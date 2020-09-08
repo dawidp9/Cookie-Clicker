@@ -1,4 +1,4 @@
-import { useRootStore } from '../../state/RootStateContext';
+import { useRootStore } from '../../model/RootStateContext';
 
 export default () => {
     const { items, user } = useRootStore();

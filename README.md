@@ -1,6 +1,6 @@
 # Cookie Clicker
 
-React web application written in TypeScript based on React Hooks and Mobx. 
+React web application written in TypeScript based on React Hooks and Mobx with mobx-state-tree. 
 
 ##### Table of Contents  
 [Overview](#Overview)  

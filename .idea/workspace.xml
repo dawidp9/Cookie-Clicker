@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="54851362-6b34-4a41-9640-e00fef778ea9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/CookieContainer/useCookieContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CookieContainer/useCookieContainer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ItemsStatisticsContainer/useItemsStatisticsContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ItemsStatisticsContainer/useItemsStatisticsContainer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/StoreContainer/useStoreContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/StoreContainer/useStoreContainer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/UserStatisticsContainer/useUserStatisticsContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/UserStatisticsContainer/useUserStatisticsContainer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/user/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/user/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/RootStateContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RootStateContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/items/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/user/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/state/store" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/state/items" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,11 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/state/items" />
+      <recent name="$PROJECT_DIR$/src/state/user" />
       <recent name="$PROJECT_DIR$/src/state/store" />
       <recent name="$PROJECT_DIR$/src/state/level" />
       <recent name="$PROJECT_DIR$/src/components/InfoText" />
-      <recent name="$PROJECT_DIR$/src/containers/ItemsStatisticsContainer" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/gifs" />
@@ -121,7 +129,7 @@
       <updated>1598798871595</updated>
       <workItem from="1598798873289" duration="6213000" />
       <workItem from="1598805396476" duration="31645000" />
-      <workItem from="1599322394835" duration="10643000" />
+      <workItem from="1599322394835" duration="13885000" />
     </task>
     <servers />
   </component>

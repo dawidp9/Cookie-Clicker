@@ -1,10 +1,10 @@
 import React, { createContext, useContext } from 'react';
-import UserStore from './user/store';
-import ItemsStore from './items/store';
+import UserModel from './user/userModel';
+import ItemsModel from './items/itemsModel';
 
 type RootStateContextValue = {
-    user: typeof UserStore;
-    items: typeof ItemsStore;
+    user: typeof UserModel;
+    items: typeof ItemsModel;
 };
 
 const RootStateContext = createContext<RootStateContextValue>(
@@ -17,8 +17,8 @@ export const RootStateProvider: React.FC<React.PropsWithChildren<{}>> = ({
     return (
         <RootStateContext.Provider
             value={{
-                user: UserStore,
-                items: ItemsStore,
+                user: UserModel,
+                items: ItemsModel,
             }}
         >
             {children}

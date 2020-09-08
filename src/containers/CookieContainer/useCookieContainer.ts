@@ -1,4 +1,4 @@
-import { useRootStore } from '../../state/RootStateContext';
+import { useRootStore } from '../../model/RootStateContext';
 import { useEffect } from 'react';
 
 export default () => {
