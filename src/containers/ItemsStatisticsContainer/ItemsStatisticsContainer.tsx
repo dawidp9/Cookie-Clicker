@@ -1,16 +1,19 @@
 import * as React from 'react';
 import useItemsStatisticsContainer from './useItemsStatisticsContainer';
 import InfoText from '../../components/InfoText/InfoText';
+import { observer } from 'mobx-react-lite';
 
 const ItemsStatisticsContainer = () => {
-    const { multiplier, robotsOwned } = useItemsStatisticsContainer();
+    const { user, items } = useItemsStatisticsContainer();
 
     return (
         <>
-            <InfoText icon={'Click'}>x{multiplier}</InfoText>
-            <InfoText icon={'Robot'}>clicks per second: {robotsOwned}</InfoText>
+            <InfoText icon={'Click'}>x{user.multiplier}</InfoText>
+            <InfoText icon={'Robot'}>
+                clicks per second: {items.robot.owned}
+            </InfoText>
         </>
     );
 };
 
-export default ItemsStatisticsContainer;
+export default observer(ItemsStatisticsContainer);

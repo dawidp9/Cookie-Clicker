@@ -1,13 +1,7 @@
-import { useSelector } from 'react-redux';
-import { RootState } from '../../types/CommonTypes';
+import { useRootStore } from '../../state/RootStateContext';
 
 export default () => {
-    const multiplier = useSelector(
-        (state: RootState) => state.points.multiplier,
-    );
-    const robotsOwned = useSelector(
-        (state: RootState) => state.store.robot.owned,
-    );
+    const { user, items } = useRootStore();
 
-    return { multiplier, robotsOwned };
+    return { user, items };
 };

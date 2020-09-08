@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54851362-6b34-4a41-9640-e00fef778ea9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/UserStatisticsContainer/useUserStatisticsContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/UserStatisticsContainer/useUserStatisticsContainer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/user/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/user/store.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/InfoText" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/state/store" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,18 +41,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/state/store" />
+      <recent name="$PROJECT_DIR$/src/state/level" />
+      <recent name="$PROJECT_DIR$/src/components/InfoText" />
+      <recent name="$PROJECT_DIR$/src/containers/ItemsStatisticsContainer" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gifs" />
       <recent name="$PROJECT_DIR$/src/containers" />
       <recent name="$PROJECT_DIR$/src/boot" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/App" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/InfoText" />
-      <recent name="$PROJECT_DIR$/src/containers/ItemsStatisticsContainer" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/state/store" />
-      <recent name="$PROJECT_DIR$/src/components/StoreItem" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -118,7 +120,8 @@
       <option name="presentableId" value="Default" />
       <updated>1598798871595</updated>
       <workItem from="1598798873289" duration="6213000" />
-      <workItem from="1598805396476" duration="30952000" />
+      <workItem from="1598805396476" duration="31645000" />
+      <workItem from="1599322394835" duration="10643000" />
     </task>
     <servers />
   </component>

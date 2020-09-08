@@ -2,20 +2,19 @@ import * as React from 'react';
 import useCookieContainer from './useCookieContainer';
 import Cookie from '../../components/Cookie/Cookie';
 import { Row } from 'react-flexbox-grid';
+import { observer } from 'mobx-react-lite';
 
 const CookieContainer = () => {
-    const { onClickCookie, ownedOreo } = useCookieContainer();
+    const { onClickCookie, items } = useCookieContainer();
 
     return (
-        <>
-            <Row middle="xs" center="xs">
-                <Cookie
-                    icon={ownedOreo ? 'Oreo' : 'Cookie'}
-                    onClick={onClickCookie}
-                />
-            </Row>
-        </>
+        <Row middle="xs" center="xs">
+            <Cookie
+                icon={items.oreo.owned ? 'Oreo' : 'Cookie'}
+                onClick={onClickCookie}
+            />
+        </Row>
     );
 };
 
-export default CookieContainer;
+export default observer(CookieContainer);

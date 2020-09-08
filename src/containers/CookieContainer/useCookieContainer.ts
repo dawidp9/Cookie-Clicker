@@ -1,25 +1,19 @@
-import { addPointByClick, addPoints } from '../../state/points/actions';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../types/CommonTypes';
+import { useRootStore } from '../../state/RootStateContext';
 import { useEffect } from 'react';
 
 export default () => {
-    const dispatch = useDispatch();
-    const ownedOreo = useSelector((state: RootState) => state.store.oreo.owned);
-    const robotsOwned = useSelector(
-        (state: RootState) => state.store.robot.owned,
-    );
+    const { user, items } = useRootStore();
 
     useEffect(() => {
         const interval = setInterval(() => {
-            dispatch(addPoints(robotsOwned));
+            user.addPoints(items.robot.owned);
         }, 1000);
         return () => clearInterval(interval);
-    }, [dispatch, robotsOwned]);
+    }, [user, items.robot.owned]);
 
     const onClickCookie = () => {
-        dispatch(addPointByClick());
+        user.addPointByClick();
     };
 
-    return { onClickCookie, ownedOreo };
+    return { onClickCookie, items };
 };

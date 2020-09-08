@@ -1,13 +1,12 @@
 import * as React from 'react';
 import useStoreContainer from './useStoreContainer';
 import StoreItem from '../../components/StoreItem/StoreItem';
+import { observer } from 'mobx-react-lite';
 
 const StoreContainer = () => {
     const {
-        robot,
-        multiplier,
-        level,
-        oreo,
+        items,
+        user,
         onClickBuyRobot,
         onClickBuyMultiplier,
         onClickBuyOreo,
@@ -17,32 +16,32 @@ const StoreContainer = () => {
         <>
             <h1>Store:</h1>
             <StoreItem
-                enabled={level >= robot.minLevel}
-                name={robot.name}
-                price={robot.price}
-                minLvl={robot.minLevel}
+                enabled={user.currentLevel >= items.robot.minLevel}
+                name={items.robot.name}
+                price={items.robot.price}
+                minLvl={items.robot.minLevel}
                 icon={'Robot'}
                 onClickBuy={onClickBuyRobot}
             />
             <StoreItem
-                enabled={level >= multiplier.minLevel}
-                name={multiplier.name}
-                price={multiplier.price}
+                enabled={user.currentLevel >= items.multiplier.minLevel}
+                name={items.multiplier.name}
+                price={items.multiplier.price}
                 icon={'Click'}
                 onClickBuy={onClickBuyMultiplier}
-                minLvl={multiplier.minLevel}
+                minLvl={items.multiplier.minLevel}
             />
             <StoreItem
-                enabled={level >= oreo.minLevel}
-                name={oreo.name}
-                price={oreo.price}
+                enabled={user.currentLevel >= items.oreo.minLevel}
+                name={items.oreo.name}
+                price={items.oreo.price}
                 icon={'Oreo'}
                 onClickBuy={onClickBuyOreo}
-                minLvl={oreo.minLevel}
-                owned={oreo.owned}
+                minLvl={items.oreo.minLevel}
+                owned={items.oreo.owned}
             />
         </>
     );
 };
 
-export default StoreContainer;
+export default observer(StoreContainer);
